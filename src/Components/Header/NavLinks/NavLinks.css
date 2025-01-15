@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background: #ff99b4;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  nav a.active {
+    background: #ff99b4;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      gap: 0.8rem;
+    }
+    
+    nav a {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
